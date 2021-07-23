@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
-
+    "deploy": "gh-pages -d build",
+    "build": "react-scripts build"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/KENSTONEJAY/EmployeeDircty19/issues"
   },
-  "homepage": "http://KENSTONEJAY.github.io/EmployeeDircty19"
+  "homepage": "http://KENSTONEJAY.github.io/EmployeeDircty19",
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
+  }
 }
