@@ -12,7 +12,8 @@ function Results(props) {
     <th scope="col" onClick={props.handleSortChange}>Name {props.filterAsc && <span><i class="bi bi-sort-up"></i></span>} {!props.filterAsc && <span><i class="bi bi-sort-down"></i></span>} </th>
     <th scope="col">Phone</th>
     <th scope="col">Email</th>
-    <th scope="col">DOB</th>
+    <th scope="col">Date of Birth</th>
+    <th scope="col">Gender</th>
   </tr>
 </thead>
 <tbody>
@@ -23,6 +24,7 @@ function Results(props) {
     <td>{result.Phone}</td>
     <td>{result.Email}</td>
     <td>{result.DOB}</td>
+    <td>{result.Gender}</td>
   </tr>
 ))}
 </tbody>

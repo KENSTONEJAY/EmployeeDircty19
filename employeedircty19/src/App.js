@@ -19,7 +19,7 @@ import  {sortItems}  from "./utils/sort";
     componentDidMount() {
       API.getData()
         .then(res => {
-          var resultItems= res.data.results.map(data=>{return {Image:data.picture.medium, Name:data.name.first+' '+data.name.last,Phone:data.phone,Email:data.email, DOB:Moment(data.dob.date).format('MM-DD-YYYY')  }});
+          var resultItems= res.data.results.map(data=>{return {Image:data.picture.large, Name:data.name.first+' '+data.name.last,Phone:data.phone,Email:data.email, DOB:Moment(data.dob.date).format('MM/DD/YYYY'), Gender:data.gender  }});
           this.setState({ results:resultItems,filteredresults:sortItems(resultItems,this.state.sortAsc) });
         }
         )
